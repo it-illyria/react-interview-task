@@ -1,0 +1,9 @@
+{
+  "jobSites": [
+    { "id": 1, "name": "Site A", "status": "Active" },
+    { "id": 2, "name": "Site B", "status": "Inactive" }
+  ],
+  "inventory": [
+    { "id": 1, "jobSiteId": 1, "category": "Electronics", "item": "Laptop", "quantity": 10 }
+  ]
+}
