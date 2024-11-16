@@ -1,0 +1,20 @@
+@use './../../styles/theme' as *;
+
+.kit-textarea {
+  font-family: Open Sans, sans sans-serif;
+  height: 114px;
+  width: 100%;
+  border: none;
+  padding: $space-s;
+  background-color: $gray-light;
+  font-size: $font-14;
+  border-radius: $space-xs;
+
+  &::placeholder {
+    color: $gray-100;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}

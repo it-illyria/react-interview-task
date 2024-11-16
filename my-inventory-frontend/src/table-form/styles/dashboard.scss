@@ -1,0 +1,68 @@
+@use './../../styles/theme' as *;
+
+.inventory-dashboard {
+  display: flex;
+  gap: 10px;
+
+  &__left {
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 #00000029;
+    border-radius: $border-s;
+    background-color: $white;
+    padding-bottom: $space-s;
+    height: 100%;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &--title {
+        padding: $space-xs;
+        background-color: $gray-715;
+        margin-top: $space-2xs;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: $space-xs $space-s;
+        margin-bottom: 100px;
+
+        &--link {
+          background: #f8f8fa;
+          text-decoration: none;
+          text-align: center;
+          padding: 8px;
+          border-radius: $border-xs;
+
+          &:hover {
+            color: $red-100;
+            background-color: #f0f0f0;
+            transition: 0.5s;
+            background-size: 200% auto;
+            box-shadow: 0 0 20px #eee;
+          }
+
+          &.active {
+            font-weight: inherit;
+            color: $white;
+            background-color: #67aa3c
+          }
+        }
+      }
+    }
+
+    &--btn-back {
+      margin: 0 auto;
+      background-color: #4052d6;
+    }
+  }
+
+  &--right {
+    max-width: 1500px;
+    width: 100%;
+  }
+}

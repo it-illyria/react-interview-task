@@ -1,0 +1,98 @@
+@use './../../styles/theme' as *;
+
+.main-container {
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px 0 #00000040;
+    border-radius: $border-s;
+    padding: $space-s;
+
+  }
+
+  &__search-container {
+    display: flex;
+
+    &--title {
+      margin-right: auto;
+      font-size: $font-12;
+      align-self: center;
+    }
+
+    & button {
+      margin-left: $space-s;
+    }
+  }
+
+  &--list {
+    box-shadow: 0 1px 4px 0 #00000040;
+    border-radius: $border-s;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__table-container {
+    & table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: $space-s;
+
+      & th {
+        background-color: #f2f2f2;
+      }
+    }
+
+    &__body {
+      &--name {
+        cursor: pointer;
+      }
+
+      &--status-label {
+        padding: $space-xs $space-s;
+        border-radius: $border-xs;
+        color: $white;
+        text-align: center;
+        display: inline-block;
+        width: 129px;
+
+        &.completed {
+          background-color: $green;
+        }
+
+        &.on-hold {
+          background-color: $red;
+        }
+
+        &.in-progress {
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}
+
+table th,
+table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #323338;
+}
+
+.main-container__table-container__body-row.highlight-row {
+  background-color: #e6f7ff;
+  transition: background-color 0.3s ease;
+}
+
+.main-container__table-container__body-row.highlight-row:hover {
+  background-color: #bae7ff;
+}
+
+.main-container__table-container__body--name {
+  font-weight: inherit;
+  text-decoration: none;
+  font-size: 14px;
+}

@@ -1,0 +1,62 @@
+/**
+ * Spaces, used for padding/margins
+ */
+$space-4xl: 40px;
+$space-3xl: 35px;
+$space-2xll: 32px;
+$space-2xl: 30px;
+$space-xl: 25px;
+$space-lg: 20px;
+$space-m: 15px;
+$space-s: 10px;
+$space-xs: 5px;
+$space-2xs: 0px;
+
+/**
+  * Borders
+  */
+$border-xs: 5px;
+$border-s: 10px;
+$border-m: 20px;
+$border-l: 25px;
+$border-xl: 30px;
+$border-full: 1000px; // ensures rounded-ness
+
+/**
+  * Font sizes
+  */
+$font-34: 2.125rem;
+$font-32: 2rem;
+$font-30: 4rem;
+$font-28: 2rem;
+$font-26: 1.75rem;
+$font-25: 1.5625rem;
+$font-24: 1.5rem;
+$font-20: 1.25rem;
+$font-18: 1.125rem;
+$font-17: 1.0625rem;
+$font-16: 1rem;
+$font-15: 0.9375rem;
+$font-14: 0.875rem;
+$font-12: 0.75rem;
+$font-10: 0.625rem;
+
+/**
+  * Colors
+  */
+
+$primary: #323338;
+///////////////////
+///
+$red: #f44336;
+$red-100: #ff5733;
+$yellow: #f0c242;
+$orange: #ff9800;
+$green: #4caf50;
+$gray-715: #f8f8fa;
+$gray-light: #f5f5f7;
+$gray-100: #e0e0e1;
+$gray-200: #f5f5f5;
+/// /////////
+$white: #ffffff;
+$black: #000000;

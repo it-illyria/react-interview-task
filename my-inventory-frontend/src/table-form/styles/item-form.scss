@@ -1,0 +1,42 @@
+@use './../../styles/theme' as *;
+
+.form-item-container {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & label {
+      font-weight: 600;
+    }
+
+    &--header {
+      display: flex;
+      gap: 30px;
+
+      & div {
+        width: 100%;
+      }
+
+      &-item {
+      }
+
+      &-quantity {
+      }
+    }
+
+    &--body {
+      &-description {
+      }
+
+      &-notes {
+      }
+    }
+
+    &--footer {
+      display: flex;
+      justify-content: end;
+      margin-top: $space-m;
+    }
+  }
+}

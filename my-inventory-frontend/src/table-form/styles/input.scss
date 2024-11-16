@@ -1,0 +1,18 @@
+@use './../../styles/theme' as *;
+
+.kit-input {
+  background-color: $gray-light;
+  border: none;
+  border-radius: $border-xs;
+  padding: $space-s;
+  width: 100%;
+  font-size: $font-14;
+  font-weight: 400;
+  font-family: Open Sans, sans-serif;
+  margin-top: 3px;
+  outline: none;
+
+  &::placeholder {
+    color: #e0e0e1;
+  }
+}

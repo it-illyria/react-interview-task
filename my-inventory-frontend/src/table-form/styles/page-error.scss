@@ -1,0 +1,19 @@
+.not-found {
+  &__box {
+    text-align: center;
+
+    & h1 {
+      font-size: 6rem;
+    }
+
+    &--content {
+      & h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    & button {
+      margin: 20px auto;
+    }
+  }
+}

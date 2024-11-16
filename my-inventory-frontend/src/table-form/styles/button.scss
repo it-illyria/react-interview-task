@@ -1,0 +1,45 @@
+@use './../../styles/theme' as *;
+
+.createButton {
+  width: 10%;
+  margin-right: 10px;
+  background-color: #71cf48;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.kit-button {
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #71cf48;
+    text-decoration: none;
+  }
+
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: $border-xs;
+  cursor: pointer;
+  font-family: Open Sans, sans serif;
+  font-weight: 600;
+
+  &.default {
+    background-color: #71cf48;
+  }
+
+  &.cancel {
+    background-color: #ea384d;
+  }
+
+  &.secondary {
+    background-color: #3a7bd5;
+  }
+}

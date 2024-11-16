@@ -1,9 +1,98 @@
 {
   "jobSites": [
-    { "id": 1, "name": "Site A", "status": "Active" },
-    { "id": 2, "name": "Site B", "status": "Inactive" }
-  ],
-  "inventory": [
-    { "id": 1, "jobSiteId": 1, "category": "Electronics", "item": "Laptop", "quantity": 10 }
+    {
+      "id": "c99f2ef4-2266-42e5-a430-415bc5c41c32",
+      "name": "joblin",
+      "status": "In Progress",
+      "categories": [
+        {
+          "id": "a7d48e05-a735-4133-afe5-8dca780ae23e",
+          "name": "Sidewalk Shed",
+          "items": [
+            {
+              "id": "6a5bf6d5-4dfa-44fe-aa42-89665fc2ce94",
+              "item": "1-AM-001",
+              "quantity": "5",
+              "description": "description",
+              "notes": "notes"
+            },
+            {
+              "id": "923d5703-3664-4dd8-9e6b-d714624274f4",
+              "item": "1-AM-002",
+              "quantity": "6",
+              "description": "description",
+              "notes": "notes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a5c2bebf-2661-46ad-b19e-03c0538e7945",
+      "name": "jobind",
+      "status": "In Progress",
+      "categories": [
+        {
+          "id": "726fddc4-5700-469d-84db-16848c0edafc",
+          "name": "Scaffold",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "bc3d50c9-7a60-4c0f-bc0f-887528fa0a78",
+      "name": "jobindd",
+      "status": "Completed",
+      "categories": [
+        {
+          "id": "c1e46302-e7ea-4397-a012-01e1023e8652",
+          "name": "Scaffold",
+          "items": [
+            {
+              "id": "6ac744c7-9780-4c8c-af3e-742b5e6c0566",
+              "item": "1-AMS-001",
+              "quantity": "6",
+              "description": "description",
+              "notes": "notes"
+            }
+          ]
+        },
+        {
+          "id": "93054a8a-aa1f-4a97-9c14-2a17b38ff37d",
+          "name": "Shoring",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "bab68583-ecee-4da5-b3e6-d7f51dcccf39",
+      "name": "jobln",
+      "status": "On Hold",
+      "categories": [
+        {
+          "id": "3920bec0-a0cd-4c6d-85e9-9e96dc775716",
+          "name": "Sidewalk Shed",
+          "items": [
+            {
+              "id": "5ecf9330-14b7-48b7-9b94-9c9be18db6ae",
+              "item": "1-AMD-001",
+              "quantity": "10",
+              "description": "description",
+              "notes": "notes"
+            }
+          ]
+        },
+        {
+          "id": "66878bf0-d545-4814-ab4d-2ebe22933171",
+          "name": "Scaffold",
+          "items": []
+        },
+        {
+          "id": "1401f34a-09f3-48d4-b28f-d3f6e94186cf",
+          "name": "Shoring",
+          "items": []
+        }
+      ]
+    }
   ]
 }

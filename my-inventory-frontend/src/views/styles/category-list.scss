@@ -1,0 +1,51 @@
+@use './../../styles/theme' as *;
+
+.table-container {
+  font-family: Open Sans, sans-serif;
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px 0 #00000029;
+  height: 100%;
+
+  &--table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: $white;
+
+    & th {
+      color: #323338;
+      font-weight: 400;
+
+      td {
+        text-align: left;
+      }
+    }
+
+    &__body {
+      tr:hover {
+        background-color: $gray-200;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+    &-title {
+      font-size: $font-14;
+      font-weight: 400;
+      color: $primary;
+      white-space: nowrap;
+    }
+
+    &-controls {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      justify-content: end;
+    }
+  }
+}
