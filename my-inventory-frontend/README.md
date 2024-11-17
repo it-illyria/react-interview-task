@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Inventory Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+* [Overview](#overview)
+* [Features](#features)
+* [Requirements](#requirements)
+* [Installation](#installation)
+    - [Clone](#clone)
+    - [Setup](#setup)
+* [Test](#test)
+* [How to Use](#how-to-use)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This React application is designed for efficient inventory management across multiple job sites. It provides a seamless
+user interface to create, view, and update job sites and their respective inventory details. With interactive components
+and dynamic updates, this app simplifies inventory tracking and modification.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Job Site Management**
+    - View a list of all job sites and their statuses on the main page.
+    - Add new job sites to the list with the `Create` button.
+    - Search all created job sites with the `Search` input
 
-### `npm test`
+2. **Inventory Dashboard**
+    - Navigate to a job site’s inventory by clicking its name.
+    - Organized inventory categories for easy viewing and management.
+    - Search all categories of specific job sites with the `Search` input
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Interactive Editing**
+    - `Double-click` a table cell to update an item.
+    - `Edit` fields in a pre-filled modal and save changes dynamically.
 
-### `npm run build`
+## Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **React.js**: The framework for the app.
+2. **Backend API**: Use `json-server` for server-side functionality.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clone
 
-### `npm run eject`
+Frontend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+$ git clone https://github.com/it-illyria/react-interview-task.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Backend (JSON Server):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Start the JSON Server with a specific database file:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  npm server
+```
 
-## Learn More
+- Access the JSON Server at http://localhost:5000/jobSites.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Frontend**
+    - Navigate to the frontend directory:
+      ```bash
+      cd my-inventory-frontend
+      ```
+    - Install dependencies:
+      ```bash
+      npm install
+      ```
+    - Start the development server:
+      ```bash
+      npm start
+      ```
+    - Access the app at `http://localhost:3000`.
 
-### Code Splitting
+2. **Backend**
+    - Start the JSON Server:
+       ```bash
+       npm server
+       ```
+    - Access the app at `http://localhost:5000/JobSites`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Test
 
-### Analyzing the Bundle Size
+This project uses **`Jest`** for unit and integration testing to ensure the reliability and correctness of the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Run all tests in the project using:
+      ```bash
+      npm test 
+      ```
+     
+   - Run tests in watch mode for active development:
+      ```bash
+      npm test -- --watch
+      ```
+   - To check test coverage:
+      ```bash
+       npm test -- --coverage
+      ```
+This will generate a `coverage` directory containing an HTML report of the coverage.
 
-### Making a Progressive Web App
+## How to Use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Job Site Management**
+    - View and manage job sites on the main page.
+    - Use the "Create" button to add new job sites.
+    - Use the "Search" input to search job sites.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Inventory Management**
+    - Click on a job site to access its inventory dashboard.
+    - Double-click a cell to open a modal for inline editing.
+    - Save changes to see them reflected immediately.
+    - Use the "Search" input to search inside inventory of specific job sites.
